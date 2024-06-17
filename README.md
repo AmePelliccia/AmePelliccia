@@ -1,10 +1,3 @@
-- 👋 Hi, I’m @AmePelliccia
-- 👀 I’m interested in changing the world with best human values ...
-- 🌱 I’m currently learning .hyperdeep training methods..
-- 💞️ I’m looking to collaborate on ...all effective project to model society on ESG pillars through latest technologies and to have more fun 😉
-- 📫 How to reach me .try on linkedin..
-- 😄 Pronouns: .accioni / sequonto..
-- ⚡ Fun fact: ..accionu / sequonto .
 ### README.md para el Proyecto Principal de Amedeo Pelliccia
 
 # Proyecto: Línea de Ensamblaje Final (FAL) 100% Verde y Automatizada en Airbus Getafe
