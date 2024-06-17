@@ -1,0 +1,22 @@
+
+pip install -r requirements.txt
+
+def create_policy(document_type, content):
+    policy_document = f"{document_type}:\n"
+    policy_document += content
+    return policy_document
+
+code_of_conduct = """
+1. Tratar a todos con respeto y dignidad.
+2. Actuar con integridad en todas las interacciones.
+3. Proteger la privacidad y confidencialidad de la información.
+"""
+
+data_access_policy = """
+1. Acceso a datos basado en la necesidad de saber.
+2. Implementación de controles de acceso estrictos.
+3. Auditorías regulares para garantizar el cumplimiento.
+"""
+
+print(create_policy("Código de Conducta", code_of_conduct))
+print(create_policy("Política de Acceso a Datos", data_access_policy))
