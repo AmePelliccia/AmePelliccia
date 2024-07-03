@@ -66,7 +66,7 @@ Amedeo Pelliccia
 Correo Electrónico: amedeo.pelliccia@icloud.com
 GitHub: Robbbo-T
 Intereses: Astronomía, Física, Ciencia de Datos, Innovación Tecnológica.
-Compromiso Personal: "Como desarrollador apasionado por la astronomía y la física, me emocioné cuando comprendí el funcionamiento del espacio-tiempo y cómo la luz viaja a través del universo. Integro ciencia y tecnología para crear proyectos innovadores. Me comprometo a liderar la implementación de tecnologías avanzadas Crear un modelo de identificación digital europea (EID) que sea holístico y seguro implica una integración de tecnologías avanzadas como la inteligencia artificial, la computación cuántica, y una infraestructura robusta de gestión de datos. Este sistema debe cumplir con las regulaciones europeas, como GDPR, y promover la sostenibilidad y la justicia. A continuación, se presenta un plan detallado para implementar este sistema, desde la conceptualización hasta la implementación y validación.
+
 
 ## 1. Conceptualización del Sistema
 
@@ -791,6 +791,7 @@ Recursos Clave
 	•	Universidades, startups, empresas tecnológicas.
 	5.	Herramientas y Software:
 	•	TensorFlow, PyTorch, Ethereum, IBM Q, Azure Quantum.
+
 
 Conclusión
 
