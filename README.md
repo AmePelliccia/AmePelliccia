@@ -10,7 +10,7 @@ print(hash_autorizado)
 ### Componentes del Sistema ChatQuantum
 
 1. **Sensores y Dispositivos IoT**: Sensores avanzados (movimiento, temperatura, cámaras, etc.) conectados a una plataforma local.
-2. **Plataforma de Procesamiento Local (AMPPEL)**: Una plataforma autóctona basada en tecnología AMPEL para el procesamiento en tiempo real.
+2. **Plataforma de Procesamiento Local (AMPEL)**: Una plataforma autóctona basada en tecnología AMPEL para el procesamiento en tiempo real.
 3. **Algoritmos NextGenGPT**: Modelos avanzados de lenguaje natural (ChatGPT) para interpretar y ejecutar comandos.
 4. **Interfaz de Usuario**: Aplicación móvil o web para interacción en lenguaje natural.
 5. **Sistema de Respuesta Automática**: Acciones automáticas como alarmas, notificaciones y activación de dispositivos.
