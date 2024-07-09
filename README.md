@@ -1,3 +1,4 @@
+CHATQUANTUM
 The 2days plan (for tomorrow quantum strategy!)😅
 
 ### Personal Objectives Grand Schema with Daily Progress Check
