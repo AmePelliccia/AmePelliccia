@@ -1,0 +1,48 @@
+To save a CSV file in Excel on your iPhone, follow these steps:
+
+1. **Open Excel**: Launch the Excel app on your iPhone.
+2. **Create a New Workbook**: Start a new workbook.
+3. **Enter Data**: Copy and paste the provided text into the first two columns (A and B) of the spreadsheet. Ensure that "Category" is in cell A1 and "Percentage" is in cell B1.
+
+Here is the text to copy and paste into Excel:
+
+```
+Category,Percentage
+Quantum Research and Development,25
+Product Development and Commercialization,40
+Market Penetration and Expansion,15
+Talent Acquisition and Development,30
+Intellectual Property Management,10
+Public Policy and Advocacy,20
+Development of EU Tech Operator Certification Standards,50
+Implementation of a Comprehensive Evaluation Process,45
+Quality Check and Assurance Mechanisms,35
+Certification and Stamp Issuance,5
+Stakeholder Engagement and Collaboration,60
+Marketing and Outreach,55
+Continuous Improvement and Adaptation,40
+```
+
+4. **Save the File**:
+   - Tap the **three dots** (more options) at the top right corner.
+   - Select **"Save As"**.
+   - Choose a location on your device or cloud storage where you want to save the file.
+   - **Enter a File Name**: Type the desired name for your file.
+   - **Choose the File Format**:
+     - Tap the **file format** option (it might show as `.xlsx` by default).
+     - Scroll through the list and select **CSV (.csv)**.
+
+5. **Save**: Once you've selected the CSV format, tap **Save**.
+
+If the Excel app on your iPhone does not support saving as CSV directly, you can follow these alternative steps:
+
+1. **Open Excel**: Launch the Excel app on your iPhone.
+2. **Create a New Workbook**: Start a new workbook.
+3. **Enter Data**: Copy and paste the provided text into the first two columns (A and B) of the spreadsheet.
+4. **Save the Workbook**: Save the file as a regular Excel workbook (`.xlsx`).
+5. **Use a File Conversion App or Tool**:
+   - You can use a file conversion app or an online tool to convert the `.xlsx` file to a `.csv` file.
+   - Upload the Excel file to the conversion tool and choose to convert it to CSV format.
+   - Download the converted CSV file.
+
+Once you have the CSV file saved, you can use it with the provided Python script to generate the HTML progress check file.
