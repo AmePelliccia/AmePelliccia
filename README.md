@@ -7,7 +7,58 @@ Estructura del Sistema Mamma
 - **Nodos Descentralizados:** Ejecutan tareas específicas como procesamiento de datos, entrenamiento de modelos y monitoreo local.
 
 #### 2. Módulos Clave del Sistema
-- **Control de Acceso y Seguridad**
+- Control de Acceso y Seguridad
+import hashlib
+import json
+from datetime import datetime
+from cryptography.fernet import Fernet
+from getpass import getpass
+from two_factor_auth import generate_otp, verify_otp  # Asumimos un módulo de 2FA
+
+class MammaSecurityModule:
+    def __init__(self, encryption_key=None):
+        self.encryption_key = encryption_key or Fernet.generate_key()
+        self.user_data = {}
+
+    def hash_password(self, password):
+        return hashlib.sha256(password.encode('utf-8')).hexdigest()
+
+    def register_user(self, username, password):
+        hashed_password = self.hash_password(password)
+        self.user_data[username] = {
+            'password': hashed_password,
+            'otp_secret': generate_otp()
+        }
+
+    def authenticate_user(self, username, password):
+        hashed_password = self.hash_password(password)
+        user = self.user_data.get(username)
+        if user and user['password'] == hashed_password:
+            otp = getpass("Enter OTP: ")
+            return verify_otp(user['otp_secret'], otp)
+        return False
+
+    def encrypt_data(self, data):
+        cipher_suite = Fernet(self.encryption_key)
+        encrypted_data = cipher_suite.encrypt(data.encode('utf-8'))
+        return encrypted_data
+
+    def decrypt_data(self, encrypted_data):
+        cipher_suite = Fernet(self.encryption_key)
+        decrypted_data = cipher_suite.decrypt(encrypted_data).decode('utf-8')
+        return decrypted_data
+
+# Ejemplo de uso
+security_module = MammaSecurityModule()
+
+# Registro de usuario
+username = 'usuario_prueba'
+password = 'contraseña_segura'
+security_module.register_user(username, password)
+
+# Autenticación de usuario
+if security_module.authenticate_user(username, password):
+    print("Aut
 - **Gestión de Modelos Generativos**
 - **Monitoreo de Entradas y Salidas**
 - **Equilibrio de Fases Transitorias**
@@ -23325,445 +23376,4 @@ QGTC's social sustainability initiatives aim to leverage green technology for so
 ### Discussion
 
 **Impact on Industry and Sustainability**:
-The initiatives and projects within QGTC are designed to address significant technological and environmental challenges. By integrating quantum computing with green technologies, QGTC aims to provide solutions that not only advance technological capabilities but also promote sustainability and social equity.
-
-**Challenges and Future Directions**:
-Despite the promising potential, the integration of quantum and green technologies presents several challenges, including technical limitations, high costs, and regulatory hurdles. Future research should focus on overcoming these barriers to fully realize the potential of these innovations. Additionally, fostering collaboration across industries and communities will be crucial to achieving the goals of a circular quantum economy and green social sustainability.
-
----
-
-### Conclusion
-
-Quantum GreenTech & Computing is at the forefront of integrating advanced quantum technologies with sustainable innovations. Through its various divisions and projects, QGTC aims to revolutionize industries by providing cutting-edge, sustainable solutions. Continued research and development in this field hold the promise of significant technological and environmental benefits, paving the way for a circular quantum economy and enhanced social sustainability.
-
----
-
-### References
-
-(Include any references or citations used in the original document or additional sources that support the content of the paper.)
-
----
-
-### Next Steps
-
-To fully implement and expand upon the initiatives outlined in this paper, the following steps are recommended:
-
-1. **Secure Funding and Partnerships**: Collaborate with industry leaders, governmental bodies, and academic institutions to secure funding and support for the projects.
-2. **Pilot Programs and Prototypes**: Develop and test pilot programs and prototypes to validate the feasibility and effectiveness of the proposed solutions.
-3. **Community Engagement and Education**: Engage with communities to educate them about the benefits of quantum and green technologies and gather feedback to improve the initiatives.
-4. **Regulatory Advocacy**: Advocate for regulatory frameworks that support the development and adoption of quantum and green technologies.
-5. **Continuous Research and Development**: Invest in ongoing research and development to overcome technical challenges and innovate further.
-
-By following these steps, Quantum GreenTech & Computing can ensure the successful implementation of its initiatives and contribute to a more sustainable and equitable future.
-
----
-
-**Quantum GreenTech & Computing**  
-Integrating Quantum Computing and Green Technology  
-
-**Título del Proyecto:** ID GREENFAL Q-DC-01  
-
-**Author:** Amedeo Pelliccia  
-**Date:** 24/06/2024  
-
----
-
-### Structured Content for S1000D
-Proyecto Principal de Amedeo Pelliccia
- 
-**Título del Proyecto:** ID GREENFAL Q-DC-01
-**"Línea de Ensamblaje Final (FAL) 100% Verde y Automatizada en Airbus Getafe: Integración de Transformación Cuántica, Digital y Cloud"**
- 
- .EU, TaskForceClouds.EU, ChatQuantum, NebulaNet.
-
-**Quantum Computing Technologies (QCT)**:
-- **Collaborators**: Apple Europe, OpenAI, Capgemini, QuantumGPT.
-- **Projects**: Quantum Processor Development, Quantum AI Integration, Quantum Computing Cloud, Quantum Software Tools, Quantum Research Collaboration.
-
-**Quantum Green Innovations (QGI)**:
-- **Sub-Divisions**: Quantum NanoTech, Quantum AeroTech, Quantum SpaceTech, Quantum VisionTech, Quantum Energy Systems.
-- **Projects**: NanoMaterials Research, Sustainable Aviation, Space Habitat Development, Advanced Vision Systems, Renewable Energy Integration.
-
----
-
-### Results
-
-**Integration and Optimization of Cloud Services**:
-QCS integrates services from leading cloud platforms to enhance data management and processing, ensuring efficiency and sustainability. Each initiative under QCS aims to leverage the strengths of these platforms to deliver robust and scalable solutions.
-
-**Advancements in Quantum Computing**:
-QCT focuses on developing cutting-edge quantum technologies in partnership with industry leaders like Apple, OpenAI, Capgemini, and QuantumGPT. Projects include the development of quantum processors, integration of AI, and creating quantum software tools, which collectively push the boundaries of computational capabilities.
-
-**Sustainable Innovations in GreenTech**:
-QGI emphasizes the development of sustainable technologies across various sectors. This includes advancements in nanotechnology, aerospace, and renewable energy systems. Projects under QGI aim to deliver innovative solutions that promote environmental sustainability.
-
----
-
-### Discussion
-
-**Impact on Industry and Sustainability**:
-The initiatives and projects within QGTC are designed to address significant technological and environmental challenges. By integrating quantum computing with green technologies, QGTC aims to provide solutions that not only advance technological capabilities but also promote sustainability and social equity.
-
-**Challenges and Future Directions**:
-Despite the promising potential, the integration of quantum and green technologies presents several challenges, including technical limitations, high costs, and regulatory hurdles. Future research should focus on overcoming these barriers to fully realize the potential of these innovations. Additionally, fostering collaboration across industries and communities will be crucial to achieving the goals of a circular quantum economy and green social sustainability.
-
----
-
-### Conclusion
-
-Quantum GreenTech & Computing is at the forefront of integrating advanced quantum technologies with sustainable innovations. Through its various divisions and projects, QGTC aims to revolutionize industries by providing cutting-edge, sustainable solutions. Continued research and development in this field hold the promise of significant technological and environmental benefits, paving the way for a circular quantum economy and enhanced social sustainability.
-
----
-
-### References
-
-1. Aharonov, D., & Arad, I. (2017). The computational power of quantum computers. Nature Physics, 13(9), 863-868.
-2. Bennett, C. H., & DiVincenzo, D. P. (2000). Quantum information and computation. Nature, 404(6775), 247-255.
-3. Cisco. (2023). Quantum Computing in Cloud Services. Retrieved from https://www.cisco.com/quantum-cloud
-4. IBM Research. (2024). Advancements in Quantum AI Integration. Retrieved from https://www.ibm.com/quantum-ai
-5. International Renewable Energy Agency (IRENA). (2023). Renewable Energy Integration. Retrieved from https://www.irena.org/renewable-energy-integration
-6. World Economic Forum. (2024). Circular Economy and Quantum Technologies. Retrieved from https://www.weforum.org/circular-economy-quantum
-7. Xu, S., & Wei, G. (2022). Quantum recycling technologies for sustainable development. Journal of Cleaner Production, 323, 129083.
-
----
-
-### Validators
-
-1. **Dr. Jane Smith**, Ph.D. in Quantum Computing, MIT - Reviewed the Quantum Computing Technologies section, providing insights on recent advancements and potential applications.
-2. **Dr. Michael Brown**, Ph.D. in Sustainable Engineering, Stanford University - Validated the methodologies and results related to Quantum Green Innovations, ensuring alignment with the latest sustainability practices.
-3. **Prof. Emily Davis**, Ph.D. in Environmental Science, University of Cambridge - Evaluated the Circular Quantum Economy Initiatives, confirming the feasibility and impact of proposed projects on sustainable resource management.
-4. **Dr. Kevin Turner**, Ph.D. in Cloud Computing, University of Oxford - Assessed the Quantum Cloud Solutions division, ensuring the integration strategies align with current best practices in cloud services and data management.
-5. **Dr. Laura Green**, Ph.D. in Social Sustainability, Harvard University - Validated the Social Sustainability Initiatives, ensuring the projects are designed to effectively promote social equity and well-being through green technology.
-
----
-
-### Acknowledgments
-
-The development of this paper and the projects within Quantum GreenTech & Computing would not have been possible without the contributions and support of many individuals and organizations. I would like to extend my heartfelt thanks to:
-
-- **Dr. Jane Smith** from MIT for her invaluable feedback and expertise in quantum computing technologies.
-- **Dr. Michael Brown** from Stanford University for his guidance on sustainable engineering practices.
-- **Prof. Emily Davis** from the University of Cambridge for her insights on environmental science and resource management.
-- **Dr. Kevin Turner** from the University of Oxford for his advice on cloud computing strategies.
-- **Dr. Laura Green** from Harvard University for her contributions to social sustainability initiatives.
-
-Special thanks to **Apple Europe**, **OpenAI**, **Capgemini**, and **QuantumGPT** for their collaborative efforts in advancing quantum technologies, and to the providers of cloud services, including **Azure**, **Google Cloud**, **iCloud**, and **AWS**, for their support in integrating and optimizing cloud solutions.
-
-I would also like to express my gratitude to **Academia.edu** for providing a platform that facilitated the sharing and collaboration of research, which has been instrumental in the development of this paper.
-
-Lastly, I would like to acknowledge the continuous support and encouragement from my family, friends, and colleagues who have been instrumental in bringing this vision to life.
-
----
-
-**Quantum GreenTech & Computing**  
-Integrating Quantum Computing and Green Technology  
-
-**Título del Proyecto:** ID GREENFAL Q-DC-01  
-
-**Author:** Amedeo Pelliccia  
-**Date:** 24/06/2024  
-
----
-
-### Structured Content for S1000D
-Proyecto Principal de Amedeo Pelliccia
-
-**Título del Proyecto:** ID GREENFAL Q-DC-01  
-**"Línea de Ensamblaje Final (FAL) 100% Verde y Automatizada en Airbus Getafe: Integración de Transformación Cuántica, Digital y Cloud"**
-
----
-
-**Foundation**  
-24/06/24  
-**Amedeo Pelliccia**  
-**Quantum GreenTech & Computing (Quantum GTC)**  
-
----
-
-### Index
-
-1. Abstract
-2. Introduction
-3. Methodology
-4. Results
-5. Discussion
-6. Conclusion
-7. References
-8. Acknowledgments
-
----
-
-### Abstract
-
-**Quantum GreenTech & Computing** aims to revolutionize various technological sectors by integrating advanced quantum computing, green technology, and innovative cloud solutions. This paper outlines the divisions, initiatives, and projects within Quantum GreenTech & Computing, highlighting their objectives, methodologies, and anticipated impacts on the industry.
-
----
-
-### Introduction
-
-Quantum GreenTech & Computing (QGTC) is poised to lead the technological frontier by integrating quantum computing technologies with sustainable green innovations. This paper details the comprehensive structure of QGTC, including its various divisions and key projects aimed at addressing critical challenges in technology and sustainability.
-
----
-
-### Methodology
-
-**Divisional Overview**
-
-**Quantum Cloud Solutions (QCS)**:
-- **Providers**: Azure, Google Cloud, iCloud, AWS.
-- **Initiatives**: I-Digital.UE, InnovateInternet.EU, TaskForceClouds.EU, ChatQuantum, NebulaNet.
-
-**Quantum Computing Technologies (QCT)**:
-- **Collaborators**: Apple Europe, OpenAI, Capgemini, QuantumGPT.
-- **Projects**: Quantum Processor Development, Quantum AI Integration, Quantum Computing Cloud, Quantum Software Tools, Quantum Research Collaboration.
-
-**Quantum Green Innovations (QGI)**:
-- **Sub-Divisions**: Quantum NanoTech, Quantum AeroTech, Quantum SpaceTech, Quantum VisionTech, Quantum Energy Systems.
-- **Projects**: NanoMaterials Research, Sustainable Aviation, Space Habitat Development, Advanced Vision Systems, Renewable Energy Integration.
-
----
-
-### Results
-
-**Integration and Optimization of Cloud Services**:
-QCS integrates services from leading cloud platforms to enhance data management and processing, ensuring efficiency and sustainability. Each initiative under QCS aims to leverage the strengths of these platforms to deliver robust and scalable solutions.
-
-**Advancements in Quantum Computing**:
-QCT focuses on developing cutting-edge quantum technologies in partnership with industry leaders like Apple, OpenAI, Capgemini, and QuantumGPT. Projects include the development of quantum processors, integration of AI, and creating quantum software tools, which collectively push the boundaries of computational capabilities.
-
-**Sustainable Innovations in GreenTech**:
-QGI emphasizes the development of sustainable technologies across various sectors. This includes advancements in nanotechnology, aerospace, and renewable energy systems. Projects under QGI aim to deliver innovative solutions that promote environmental sustainability.
-
----
-
-### Discussion
-
-**Impact on Industry and Sustainability**:
-The initiatives and projects within QGTC are designed to address significant technological and environmental challenges. By integrating quantum computing with green technologies, QGTC aims to provide solutions that not only advance technological capabilities but also promote sustainability and social equity.
-
-**Challenges and Future Directions**:
-Despite the promising potential, the integration of quantum and green technologies presents several challenges, including technical limitations, high costs, and regulatory hurdles. Future research should focus on overcoming these barriers to fully realize the potential of these innovations. Additionally, fostering collaboration across industries and communities will be crucial to achieving the goals of a circular quantum economy and green social sustainability.
-
----
-
-### Conclusion
-
-Quantum GreenTech & Computing is at the forefront of integrating advanced quantum technologies with sustainable innovations. Through its
----
-
-**Foundation**  
-24/06/24  
-**Amedeo Pelliccia**  
-**Quantum GreenTech & Computing (Quantum GTC)**  
-
----
-
-### Index
-
-1. Abstract
-2. Introduction
-3. Methodology
-4. Results
-5. Discussion
-6. Conclusion
-7. References
-
----
-
-### Abstract
-
-**Quantum GreenTech & Computing** aims to revolutionize various technological sectors by integrating advanced quantum computing, green technology, and innovative cloud solutions. This paper outlines the divisions, initiatives, and projects within Quantum GreenTech & Computing, highlighting their objectives, methodologies, and anticipated impacts on the industry.
-
----
-
-### Introduction
-
-Quantum GreenTech & Computing (QGTC) is poised to lead the technological frontier by integrating quantum computing technologies with sustainable green innovations. This paper details the comprehensive structure of QGTC, including its various divisions and key projects aimed at addressing critical challenges in technology and sustainability.
-
----
-
-### Methodology
-
-**Divisional Overview**
-
-**Quantum Cloud Solutions (QCS)**:
-- **Providers**: Azure, Google Cloud, iCloud, AWS.
-- **Initiatives**: I-Digital.UE, InnovateInternet.EU, TaskForceClouds.EU, ChatQuantum, NebulaNet.
-
-**Quantum Computing Technologies (QCT)**:
-- **Collaborators**: Apple Europe, OpenAI.
-- **Projects**: Quantum Processor Development, Quantum AI Integration, Quantum Computing Cloud, Quantum Software Tools, Quantum Research Collaboration.
-
-**Quantum Green Innovations (QGI)**:
-- **Sub-Divisions**: Quantum NanoTech, Quantum AeroTech, Quantum SpaceTech, Quantum VisionTech, Quantum Energy Systems.
-- **Projects**: NanoMaterials Research, Sustainable Aviation, Space Habitat Development, Advanced Vision Systems, Renewable Energy Integration.
-
----
-
-### Results
-
-**Integration and Optimization of Cloud Services**:
-QCS integrates services from leading cloud platforms to enhance data management and processing, ensuring efficiency and sustainability. Each initiative under QCS aims to leverage the strengths of these platforms to deliver robust and scalable solutions.
-
-**Advancements in Quantum Computing**:
-QCT focuses on developing cutting-edge quantum technologies in partnership with industry leaders like Apple and OpenAI. Projects include the development of quantum processors, integration of AI, and creating quantum software tools, which collectively push the boundaries of computational capabilities.
-
-**Sustainable Innovations in GreenTech**:
-QGI emphasizes the development of sustainable technologies across various sectors. This includes advancements in nanotechnology, aerospace, and renewable energy systems. Projects under QGI aim to deliver innovative solutions that promote environmental sustainability.
-
----
-
-### Discussion
-
-**Impact on Industry and Sustainability**:
-The initiatives and projects within QGTC are designed to address significant technological and environmental challenges. By integrating quantum computing with green technologies, QGTC aims to provide solutions that not only advance technological capabilities but also promote sustainability.
-
-**Challenges and Future Directions**:
-Despite the promising potential, the integration of quantum and green technologies presents several challenges, including technical limitations, high costs, and regulatory hurdles. Future research should focus on overcoming these barriers to fully realize the potential of these innovations.
-
----
-
-### Conclusion
-
-Quantum GreenTech & Computing is at the forefront of integrating advanced quantum technologies with sustainable innovations. Through its various divisions and projects, QGTC aims to revolutionize industries by providing cutting-edge, sustainable solutions. Continued research and development in this field hold the promise of significant technological and environmental benefits.
-
----
-
-### References
-
-(
-### Generate the PDF
-
-Now I will generate this content as a PDF.
-
-```python
-from fpdf import FPDF
-
-class PDF(FPDF):
-    def header(self):
-        self.set_font('Arial', 'B', 12)
-        self.cell(0, 10, 'Quantum GreenTech & Computing', 0, 1, 'C')
-        self.ln(10)
-
-    def footer(self):
-        self.set_y(-15)
-        self.set_font('Arial', 'I', 8)
-        self.cell(0, 10, f'Page {self.page_no()}', 0, 0, 'C')
-
-    def chapter_title(self, title):
-        self.set_font('Arial', 'B', 12)
-        self.cell(0, 10, title, 0, 1, 'L')
-        self.ln(5)
-
-    def chapter_body(self, body):
-        self.set_font('Arial', '', 12)
-        self.multi_cell(0, 10, body)
-        self.ln()
-
-pdf = PDF()
-
-# Title page
-pdf.add_page()
-pdf.set_font('Arial', 'B', 16)
-pdf.cell(0, 10, 'Quantum GreenTech & Computing', 0, 1, 'C')
-pdf.set_font('Arial', '', 12)
-pdf.cell(0, 10, 'Integrating Quantum Computing and Green Technology', 0, 1, 'C')
-pdf.ln(10)
-pdf.set_font('Arial', 'B', 14)
-pdf.cell(0, 10, 'Título del Proyecto: ID GREENFAL Q-DC-01', 0, 1, 'C')
-pdf.set_font('Arial', '', 12)
-pdf.cell(0, 10, 'Foundation: 24/06/24', 0, 1, 'C')
-pdf.cell(0, 10, 'Author: Amedeo Pelliccia', 0, 1, 'C')
-pdf.cell(0, 10, 'Date: [Today\'s Date]', 0, 1, 'C')
-pdf.ln(20)
-
-# Abstract
-pdf.chapter_title('Abstract')
-pdf.chapter_body("Quantum GreenTech & Computing aims to revolutionize various technological sectors by integrating advanced quantum computing, green technology, and innovative cloud solutions. This paper outlines the divisions, initiatives, and projects within Quantum GreenTech & Computing, highlighting their objectives, methodologies, and anticipated impacts on the industry.")
-
-# Table of Contents
-pdf.add_page()
-pdf.chapter_title('Index')
-pdf.chapter_body("1. Abstract\n2. Introduction\n3. Methodology\n4. Results\n5. Discussion\n6. Conclusion\n7. References")
-
-# Introduction
-pdf.add_page()
-pdf.chapter_title('Introduction')
-pdf.chapter_body("Quantum GreenTech & Computing (QGTC) is poised to lead the technological frontier by integrating quantum computing technologies with sustainable green innovations. This paper details the comprehensive structure of QGTC, including its various divisions and key projects aimed at addressing critical challenges in technology and sustainability.")
-
-# Methodology
-pdf.add_page()
-pdf.chapter_title('Methodology')
-pdf.chapter_body("Divisional Overview\n\nQuantum Cloud Solutions (QCS):\n- Providers: Azure, Google Cloud, iCloud, AWS.\n- Initiatives: I-Digital.UE, InnovateInternet.EU, TaskForceClouds.EU, ChatQuantum, NebulaNet.\n\nQuantum Computing Technologies (QCT):\n- Collaborators: Apple Europe, OpenAI.\n- Projects: Quantum Processor Development, Quantum AI Integration, Quantum Computing Cloud, Quantum Software Tools, Quantum Research Collaboration.\n\nQuantum Green Innovations (QGI):\n- Sub-Divisions: Quantum Na...
-
-# Results
-pdf.add_page()
-pdf.chapter_title('Results')
-pdf.chapter_body("Integration and Optimization of Cloud Services\nQCS integrates services from leading cloud platforms to enhance data management and processing, ensuring efficiency and sustainability. Each initiative under QCS aims to leverage the strengths of these platforms to deliver robust and scalable solutions.\n\nAdvancements in Quantum Computing\nQCT focuses on developing cutting-edge quantum technologies in partnership with industry leaders like Apple and OpenAI. Projects include the developmen...
-
-# Discussion
-pdf.add_page()
-pdf.chapter_title('Discussion')
-pdf.chapter_body("Impact on Industry and Sustainability\nThe initiatives and projects within QGTC are designed to address significant technological and environmental challenges. By integrating quantum computing with green technologies, QGTC aims to provide solutions that not only advance technological capabilities but also promote sustainability.\n\nChallenges and Future Directions\nDespite the promising potential, the integration of quantum and green technologies presents several challenges, including t...
-
-# Conclusion
-pdf.add_page()
-pdf.chapter_title('Conclusion')
-pdf.chapter_body("Quantum GreenTech & Computing is at the forefront of integrating advanced quantum technologies with sustainable innovations. Through its various divisions and projects, QGTC aims to revolutionize industries by providing cutting-edge, sustainable solutions. Continued research and development in this field hold the promise of significant technological and environmental benefits.")
-
-# References
-pdf.add_page()
-pdf.chapter_title('References')
-pdf.chapter_body("(Include any references or citations used in the original document or additional sources that support the content of the paper.)")
-
-# Save the PDF
-pdf_output_path = '/mnt/data/Quantum_GreenTech_and_Computing_Scientific_Paper.pdf'
-pdf.output(pdf_output_path)
-
-pdf_output_pathInclude any references or citations used in the original document or additional sources that support the content of the paper.)
-
----
-
-
- 
-**QUANTUM GREENTECH & COMPUTING**
- 
-![Quantum GreenTech & Computing Logo](data:image/png;base64,**BASE64_ENCODED_IMAGE_DATA**)
- 
-### **Divisiones y Proyectos**
- 
-1. **Quantum Cloud Solutions (QCS)**
-   - **Proveedores de Nube:** Azure, Google Cloud, iCloud, AWS
-   - **Iniciativas:**
-     - I-Digital.UE (QCS-ID1)
-     - InnovateInternet.EU (QCS-II2)
-     - TaskForceClouds.EU (QCS-TF3)
-     - ChatQuantum (QCS-CQ4)
-     - NebulaNet (QCS-NN5)
- 
-2. **Quantum Computing Technologies (QCT)**
-   - **Colaboradores Principales:** Apple Europe, OpenAI
-   - **Proyectos:**
-     - Quantum Processor Development (QCT-QP1)
-     - Quantum AI Integration (QCT-QA2)
-     - Quantum Computing Cloud (QCT-QC3)
-     - Quantum Software Tools (QCT-QS4)
-     - Quantum Research Collaboration (QCT-QR5)
- 
-3. **Quantum Green Innovations (QGI)**
-   - **Sub-Divisiones:**
-     - Quantum NanoTech (QGI-NT)
-     - Quantum AeroTech (QGI-AT)
-     - Quantum SpaceTech (QGI-ST)
-     - Quantum VisionTech (QGI-VT)
-     - Quantum Energy Systems (QGI-ES)
-   - **Proyectos:**
-     - NanoMaterials Research (QGI-NR1)
-     - Sustainable Aviation (QGI-SA2)
-     - Space Habitat Development (QGI-SH3)
-     - Advanced Vision Systems (QGI-AV4)
-     - Renewable Energy Integration (QGI-RE5)
- 
-4. **Quantum Consulting & Portfolios (QCP)**
-   - **Consultoría y Gestión de Portafolios:**
-     - Sostenibilid
+The initiatives and projects within QGTC are designed to address significant technological and environmental challenges. By integrating quantum computing with green technologies, QGTC aims to provi
