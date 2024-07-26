@@ -1,5 +1,5 @@
 El proyecto "Terraforming Teraqubits y Teraterabits
-(Robbo-T)" se posiciona como un líder en la
+(Robbbo-T)" se posiciona como un líder en la
 transformación de la gestión de datos y la
 ciberseguridad en Europa, integrando avanzadas
 tecnologías cuánticas y de almacenamiento masivo, y
