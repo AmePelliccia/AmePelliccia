@@ -1,16 +1,157 @@
-# 👋 Hi, I’m @Robbbo-T
+import django.utils.timezone
+from django.conf import settings
+from django.db import migrations, models
 
-## Sobre Mí
-Soy un desarrollador apasionado por la astronomía y la física. Mi interés por la ciencia comenzó cuando comprendí el funcionamiento del espacio-tiempo y cómo la luz viaja a través del universo. Me fascina cómo vemos las cosas en el universo no en tiempo real, sino en la luz reflejada del pasado. Esta comprensión me impulsó a integrar la ciencia y la tecnología para crear proyectos innovadores.
+TIMEZONES = sorted([(tz, tz) for tz in zoneinfo.available_timezones()])
 
-## Intereses
-- 👀 Estoy interesado en encontrar soluciones a problemas complejos usando tecnología avanzada.
-- 🌱 Actualmente estoy aprendiendo sobre el código Fibonacci, códigos mixtos, y AMPEL (una tecnología innovadora para el procesamiento de datos).
-- 💞️ Estoy buscando colaborar en proyectos que sean inteligentes y desafiantes.
-- 📫 Cómo contactarme: Si buscas, encontrarás formas de contactarme en mis perfiles sociales y profesionales.
-- 😄 Pronombres: mix.
-- ⚡ Dato curioso: Todo es divertido si te gusta.
+class Migration(migrations.Migration):
 
+    dependencies = [
+        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+    ]
+
+    operations = [
+        migrations.CreateModel(
+            name='Attachment',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('counter', models.SmallIntegerField()),
+                ('name', models.CharField(max_length=255)),
+                ('content_type', models.CharField(max_length=255)),
+                ('encoding', models.CharField(max_length=255, null=True)),
+                ('size', models.IntegerField()),
+                ('content', models.BinaryField()),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Email',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('message_id', models.CharField(max_length=255, db_index=True)),
+                ('message_id_hash', models.CharField(max_length=255, db_index=True)),
+                ('subject', models.CharField(max_length=512, db_index=True)),
+                ('content', models.TextField()),
+                ('date', models.DateTimeField(db_index=True)),
+                ('timezone', models.SmallIntegerField()),
+                ('in_reply_to', models.CharField(max_length=255, null=True, blank=True)),
+                ('archived_date', models.DateTimeField(auto_now_add=True, db_index=True)),
+                ('thread_depth', models.IntegerField(default=0)),
+                ('thread_order', models.IntegerField(default=0, db_index=True)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Favorite',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='LastView',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('view_date', models.DateTimeField(auto_now=True)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='MailingList',
+            fields=[
+                ('name', models.CharField(max_length=254, serialize=False, primary_key=True)),
+                ('display_name', models.CharField(max_length=255)),
+                ('description', models.TextField()),
+                ('subject_prefix', models.CharField(max_length=255)),
+                ('archive_policy', models.IntegerField(default=2, choices=[(0, 'never'), (1, 'private'), (2, 'public')])),
+                ('created_at', models.DateTimeField(default=django.utils.timezone.now)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Profile',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('karma', models.IntegerField(default=1)),
+                ('timezone', models.CharField(default='', max_length=100, choices=TIMEZONES)),
+                ('user', models.OneToOneField(related_name='hyperkitty_profile', to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Sender',
+            fields=[
+                ('address', models.EmailField(max_length=255, serialize=False, primary_key=True)),
+                ('name', models.CharField(max_length=255)),
+                ('mailman_id', models.CharField(max_length=255, null=True, db_index=True)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Tag',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('name', models.CharField(unique=True, max_length=255, db_index=True)),
+            ],
+            options={
+                'ordering': ['name'],
+            },
+        ),
+        migrations.CreateModel(
+            name='Tagging',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('tag', models.ForeignKey(to='hyperkitty.Tag', on_delete=models.CASCADE)),
+                ('thread', models.ForeignKey(to='hyperkitty.Thread', on_delete=models.CASCADE)),
+                ('user', models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Thread',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('thread_id', models.CharField(max_length=255, db_index=True)),
+                ('date_active', models.DateTimeField(default=django.utils.timezone.now, db_index=True)),
+                ('category', models.ForeignKey(related_name='threads', to='hyperkitty.ThreadCategory', null=True, on_delete=models.CASCADE)),
+                ('mailinglist', models.ForeignKey(related_name='threads', to='hyperkitty.MailingList', on_delete=models.CASCADE)),
+            ],
+            options={
+                'unique_together': {('mailinglist', 'thread_id')},
+            },
+        ),
+        migrations.CreateModel(
+            name='ThreadCategory',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('name', models.CharField(unique=True, max_length=255, db_index=True)),
+                ('color', models.CharField(max_length=7)),
+            ],
+            options={
+                'verbose_name_plural': 'Thread categories',
+            },
+        ),
+        migrations.CreateModel(
+            name='Vote',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('value', models.SmallIntegerField(db_index=True)),
+                ('email', models.ForeignKey(related_name='votes', to='hyperkitty.Email', on_delete=models.CASCADE)),
+                ('user', models.ForeignKey(related_name='votes', to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE)),
+            ],
+            options={
+                'unique_together': {('email', 'user')},
+            },
+        ),
+        migrations.CreateModel(
+            name='Attachment',
+            fields=[
+                ('email', models.ForeignKey(related_name='attachments', to='hyperkitty.Email', on_delete=models.CASCADE)),
+                ('counter', models.SmallIntegerField()),
+                ('name', models.CharField(max_length=255)),
+                ('content_type', models.CharField(max_length=255)),
+                ('encoding', models.CharField(max_length=255, null=True)),
+                ('size', models.IntegerField()),
+                ('content', models.BinaryField()),
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+            ],
+            options={
+                'unique_together': {('email', 'counter')},
+            },
+        ),
+    ]
 
  Visión Personal para Capgemini
 ---
