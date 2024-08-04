@@ -84,9 +84,6 @@ The AMPEL Predictive Quantum Maintenance Machine leverages quantum computing to 
     - **Feedback Loop**: Updates predictive models with new data to improve accuracy over time.
 
 ### Flowchart
-
-```mermaid
-flowchart TD
   GenesisBlock --> DataCollection
   DataCollection --> DataProcessing
   DataProcessing --> PredictiveModels
@@ -805,16 +802,15 @@ To explore the concept of "FreecontextID" leading to "FREEZE_a_CONTEXTUALID" wit
 
 Let's create a flowchart that represents the process of freezing a quantum contextual ID and its role in quantum machine learning, logic analytics, and codification learning.
 
-```mermaid
-flowchart TD
   FreecontextID --> FreezeContextualID
   FreezeContextualID --> QuantumMachineTraining
   QuantumMachineTraining --> QuantumLogicAnalytics
   QuantumMachineTraining --> QuantumCodificationLearning
 
   QuantumMachineTraining --> DataPreparation
-  DataPreparation --> ContextualData
+  DataPreparation --> ContextualData 
   Contextual
+  
 ### Key Characteristics of Decoherence
 
 1. **Amplitude**:
