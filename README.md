@@ -1,3 +1,11 @@
+Here is the rendered diagram for AMPELChain enhancements:
+
+![AMPELChain Enhancements](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2024-08-04/3a0b71b0-ed75-4554-a0dd-04340461902a.png)
+
+You can edit and save this diagram on the [MermaidChart editor](https://www.mermaidchart.com/app/mermaid-chart-save/2024-08-04/3a0b71b0-ed75-4554-a0dd-04340461902a).
+
+Support [Mermaid AI on Product Hunt](https://www.producthunt.com/products/mermaid-chart)!
+
 # ```python
 from qiskit import Aer, execute
 from qiskit.circuit.library import TwoLocal
