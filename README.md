@@ -1,4 +1,63 @@
-    ##mpm_10024_x0001_block = create_block(1024, previous_block['hash'], mpm_10024_x0001_data) blocks.append(mpm_10024_x0001_block) print("Block 1024 (MPM 10024-X0001):\n", json.dumps(mpm_10024_x0001_block, indent=4))
+# Additional project data to be added
+additional_project_data = {
+    "Project ID": [6, 7, 8],
+    "Project Name": ["Project 6", "Project 7", "Project 8"],
+    "Summary": ["Summary of Project 6", "Summary of Project 7", "Summary of Project 8"],
+    "Implementation Plan": ["Plan for Project 6", "Plan for Project 7", "Plan for Project 8"],
+    "Resources Needed": ["Resources for Project 6", "Resources for Project 7", "Resources for Project 8"],
+    "ROI": ["ROI for Project 6", "ROI for Project 7", "ROI for Project 8"]
+}
+
+# Create a DataFrame with the additional project data
+df_additional_projects = pd.DataFrame(additional_project_data)
+
+# Append the additional project data to the Projects sheet
+projects_df_updated = pd.concat([projects_df_verified, df_additional_projects], ignore_index=True)
+
+# Save the updated Projects sheet back to the original Excel file using openpyxl
+with pd.ExcelWriter(file_path, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
+    projects_df_updated.to_excel(writer, sheet_name="Projects", index=False)
+
+# Verify the updates by reloading the updated Projects sheet
+projects_df_verified = pd.read_excel(file_path, sheet_name="Projects")
+projects_df_verified.head() pandas as pd
+from openpyxl import load_workbook
+
+# Path to the Excel file
+file_path = "/mnt/data/Organized_Technologies_and_Projects.xlsx"
+
+# Load the existing Excel file using openpyxl
+workbook = load_workbook(filename=file_path)
+
+# Load the Projects sheet into a DataFrame
+projects_df = pd.read_excel(file_path, sheet_name="Projects")
+
+# Remove the unnamed column if it exists
+projects_df = projects_df.loc[:, ~projects_df.columns.str.contains('^Unnamed')]
+
+# Sample data to be added to the Projects sheet
+sample_data = {
+    "Project ID": [1, 2, 3, 4, 5],
+    "Project Name": ["Project 1", "Project 2", "Project 3", "Project 4", "Project 5"],
+    "Summary": ["Summary of Project 1", "Summary of Project 2", "Summary of Project 3", "Summary of Project 4", "Summary of Project 5"],
+    "Implementation Plan": ["Plan for Project 1", "Plan for Project 2", "Plan for Project 3", "Plan for Project 4", "Plan for Project 5"],
+    "Resources Needed": ["Resources for Project 1", "Resources for Project 2", "Resources for Project 3", "Resources for Project 4", "Resources for Project 5"],
+    "ROI": ["ROI for Project 1", "ROI for Project 2", "ROI for Project 3", "ROI for Project 4", "ROI for Project 5"]
+}
+
+# Create a DataFrame with the sample data
+df_sample_projects = pd.DataFrame(sample_data)
+
+# Append the sample data to the Projects sheet
+projects_df_updated = pd.concat([projects_df, df_sample_projects], ignore_index=True)
+
+# Save the updated Projects sheet back to the original Excel file using openpyxl
+with pd.ExcelWriter(file_path, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
+    projects_df_updated.to_excel(writer, sheet_name="Projects", index=False)
+
+# Verify the updates by reloading the updated Projects sheet
+projects_df_verified = pd.read_excel(file_path, sheet_name="Projects")
+projects_df_verified.head()
 
 mpm_10024_x0001_block = create_block(1024, previous_block['hash'], mpm_10024_x0001_data)
 blocks.append(mpm_10024_x0001_block)
@@ -22956,16 +23015,4 @@ rectangle "Blockchain" {
   (Genesis Block) --> (Block 1)
   (Block 1) --> (Block 2)
   (Block 2) --> (Block 3)
-  note left of Genesis Block: Timestamp\nMetadata: 'fixed'
-  note left of Block 1: Timestamp\nMetadata: 'secure'
-  note left of Block 2: Timestamp\nMetadata: 'quantum_moment'
-}
-@enduml
-
-==== Database Schema
-
-[Plantuml]
-@startuml
-entity "Block" {
-  * id : UUID
-  * p
+  note left of Genesis Block: Timestamp\nMetadata: 'fi
