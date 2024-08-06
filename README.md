@@ -1,4 +1,33 @@
-### Agradecimiento
+
+# AMPELSYSTEMS Mothercell
+### Created by Amedeo Pelliccia
+
+## Introduction
+The AMPELSYSTEMS Mothercell is the central repository for hosting, managing, and integrating various AMPELChain technologies. This platform leverages GitHub for version control, collaboration, and cloud integration.
+
+## Directory Structure
+- **docs**: Documentation for the project
+- **src**: Source code for various modules
+- **data**: Data storage and management
+- **models**: Machine learning and predictive models
+- **scripts**: Utility scripts for deployment and maintenance
+
+## Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AmedeoPelliccia/AMPELSYSTEMS.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd AMPELSYSTEMS
+   ```
+3. Follow the setup instructions in each module's README.
+
+## Contributing
+Please read `CONTRIBUTING.md` for details on our code of conduct and the process for submitting pull requests.
+
+## License
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 **Gracias a Capgemini e Airbus que me dieron la posibilidad de formarme en publicaciones técnicas.**
 
@@ -29,7 +58,7 @@ Vamos a redirigir los enlaces de cada capítulo y tecnología avanzada a un repo
   - **CMC: NT047**
   - **Descripción:** Redes de Sensores Inteligentes para Monitoreo en Vuelo.
   - **Enlace:** [CAS-AMPEL-11001](https://github.com/usuario/repositorio/blob/main/NT047.md)
-
+    
 ### Ejemplo de Repositorio de GitHub
 
 #### NT013.md
