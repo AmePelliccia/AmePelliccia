@@ -1,4 +1,4 @@
-### New Technology Details (AMPEL DMC NT)
+### New Technology Details (AMPEL IPPN NTXXX)
 
 The following are the detailed descriptions, resources, costs, benefits, partners, investors, and clients for the various new technologies planned for 2024. Each technology is enhanced with advanced sensors and software specifications, providing significant improvements for private constructors and airlines.
 
