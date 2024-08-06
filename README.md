@@ -1,4 +1,5 @@
-#AMPEL SYSTEMS AND SCIENCE
+# AMPEL SYSTEMS AND SCIENCE
+
 Introduzione
 
 La scienza dei materiali è in rapida evoluzione, spinta dalla ricerca di sostanze che superino i materiali tradizionali in termini di resistenza, conducibilità ed efficienza dei costi. Due materiali rivoluzionari in questo ambito sono le polveri di diamante sintetico e i nanotubi di carbonio (CNT). Entrambi possiedono proprietà straordinarie che li rendono altamente preziosi in diversi settori. Questo articolo esplora questi materiali, fornendo una valutazione completa delle loro proprietà e applicazioni, e offrendo un codice R adattato per la loro analisi.
