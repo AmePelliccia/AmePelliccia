@@ -1,5 +1,5 @@
 AMPEL SYSTEMS AND SCIENCE
-*^ChatQuantun**
+*^ChatQuantum**
 AMPEL 
 ### Demonstrating Quantum Coherence with Multiple Coherent States using Qiskit
 
