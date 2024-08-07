@@ -1,4 +1,4 @@
-### Proyectos Estratégicos de Ampel Creo que el equilibrio está en el 10% de 2000 millones, para que pueda poner en marcha los proyectos de avión verde y digitalización del entorno extra atmosférico 
+245,5 millones ### Proyectos Estratégicos de Ampel Creo que el equilibrio está en el 10% de 2000 millones, para que pueda poner en marcha los proyectos de avión verde y digitalización del entorno extra atmosférico 
 
 PMISSS PROGRESSIVE MECHANICAL INDEX ON SUSTAINABLE SYSTEMS AND SCIENCEs
 
@@ -19844,30 +19844,4 @@ Environmental performance benchmarks. ATA 00 - Training material creation.
 ATA 00 - Employee engagement initiatives. ATA 00 - Development of a sustainability roadmap. ATA 00 - Resource allocation planning. ATA 00 - Digital tool adoption. 
 ATA 00 - Initial project scoping. 
 ATA 00 - Setting up sustainability committees. 
-Stakeholder communication plan. ATA 00 - Pilot projects selection. ATA 00 - Baseline performance reporting. ATA 00 - Development of sustainability workshops. ATA 00 - Project integration strategy. ATA 00 - Stakeholder engagement strategy. ATA 00 - Implementation of feedback loops. 
-""" 
-  
- 
-# Define parameters total_budget = 2000000000  # 2 billion 
-dollars years = 3 initial_pool = 100000 
-target_year = 2028 
-  
-# Transform the project 
-list 
-transformed_projects = transform_project_list(pro jects_list, total_budget, years, initial_pool, target_year) 
-  
-# Print the transformed projects 
-print(transformed_project
-s) 
-``` 
-  
-Este script asigna un 5% del presupuesto total y de los recursos humanos a Amedeo Pelliccia, reconociendo su contribución como el creador del algoritmo. Este porcentaje es configurable a través del parámetro 
-`creator_percentage` en la función 
-`transform_project_list`. Puedes ejecutar este script en un entorno de Python para obtener la lista transformada de proyectos. The 25 
-TERRAQUANTUM Depts 
-and first 1000 projects for 
-100.000 people 
-  
-Step by 1000 steps 
-  
-Here is a detailed breakdown of 40 potential projects for each of the 25 depa
+Stakeholder communication plan. ATA 00 - Pilot projects selection. ATA 00 - Baseline performance reporting.
