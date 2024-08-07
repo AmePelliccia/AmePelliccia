@@ -1,4 +1,5 @@
 AMPEL SYSTEMS AND SCIENCE
+PMISSS Stands for PROGRESSIVE MECHANICAL INDEX ON SUSTAINABLE SYSTEMS AND SCIENCEs
 *^ChatQuantum**
 ### Presentación del Método Científico Incremental Sostenible: Ampel Systems and Sciences
 
