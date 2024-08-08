@@ -1,1 +1,51 @@
-codigointegridad_README.md
+prometheus.md
+
+### Introduction to the Spike LR2 Anti-Tank Missile System
+
+The Spike LR2 anti-tank missile system is a fifth-generation, electro-optically guided missile system used by the Spanish Armed Forces. This system, developed by Rafael Advanced Defense Systems Ltd., is designed to replace older systems such as the MILAN and TOW. The Spike LR2 offers enhanced capabilities, including the ability to operate effectively during both day and night, in all weather conditions, and with improved precision and range.
+
+### Historical Context and Evolution
+
+#### Previous Systems
+Before the introduction of the Spike LR2, the Spanish Armed Forces utilized several anti-tank missile systems, including:
+- **MILAN Missiles:** Lightweight systems used by Infantry and Cavalry units, effective up to 2000 meters but lacking night or poor visibility capabilities.
+- **TOW-LWL (Tube launched Optically tracked, Wire guided - Light Weight Launcher):** Long-range systems effective up to 3750 meters, equipped with thermal cameras and typically vehicle-mounted due to their size and weight.
+- **M47 DRAGON:** Used by the Marine Infantry, effective up to 1500 meters, designed for single-operator use.
+
+#### Acquisition of Spike LR2
+In response to evolving military needs, the Ministry of Defense decided to procure the Spike LR2 system. On November 24, 2006, the Council of Ministers authorized the purchase of 260 firing posts and 2600 anti-tank missiles (later adjusted to 2550). Deliveries occurred in 13 phases between 2009 and 2014.
+
+### Spike LR2 System Overview
+
+The Spike LR2 is part of a missile family designed to meet the diverse requirements of various military users. It is represented in Europe by Eurospike GmbH, a joint venture of Diehl BGT Defence GmbH & Co. KG, Rheinmetall Defence Electronics GmbH, and Rafael Advanced Defense Systems Ltd.
+
+#### Components
+The Spike LR2 system includes several key components:
+- **Integrated Control Launch Unit (iCLU):** Combines a thermal camera, target acquisition system, and a tripod. Features advanced capabilities such as improved thermal imaging, GPS, laser rangefinder, and digital compass.
+- **SUDOCU (Smart Unit Display for Operational Commanding Use):** A smart display for team leaders, facilitating target acquisition and data recording.
+- **Missiles:** Two types - HEAT (High Explosive Anti-Tank) for armored targets and Multi-Purpose (MP) for a variety of targets including bunkers and personnel.
+
+#### Key Features
+- **Weight:** Approximately 28 kg, designed to be transported by two soldiers.
+- **Observation Sensors:** High-quality sensors for both day and night operations.
+- **Guidance System:** High-precision guidance with options for autonomous or operator-controlled missile flight.
+- **Attack Modes:** Capable of top-attack profiles for maximum effectiveness against armored targets.
+
+### Training and Simulation
+
+Training for the Spike LR2 system includes multiple levels to ensure comprehensive operator proficiency:
+1. **Mechanical Trainer (MT):** For basic transport, assembly, and disassembly training.
+2. **Field Training Equipment (ODT):** For realistic target acquisition and engagement training, excluding missile launch.
+3. **Indoor Training Device (IDT):** Simulates complete launch sequences in a controlled environment, allowing for detailed performance evaluations.
+
+### Operational Modes
+
+The Spike LR2 can operate in several modes, enhancing its versatility on the battlefield:
+- **Fire and Forget (F&F):** Autonomous missile guidance post-launch.
+- **Fire and Observe (F&O):** Allows operator intervention and target adjustment during missile flight.
+- **Manual:** Operator-guided missile flight, used in low-contrast scenarios.
+- **Auto:** Pre-programmed target coordinates for non-line-of-sight (NLOS) engagements.
+
+### Conclusion
+
+The Spike LR2 system represents a significant advancement in anti-tank warfare, offering enhanced precision, versatility, and effectiveness. Its integration into the Spanish Armed Forces marks a step forward in maintaining a modern and capable defense capability. The continuous evolution and training associated with the Spike LR2 ensure that it remains at the forefront of military technology and operational readiness.p
