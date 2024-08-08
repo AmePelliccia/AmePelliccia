@@ -1,3 +1,5 @@
+**CHATGPT** 
+**Amedeo Pelliccia** 
 ***AMPEL SYSTEMS AND SCIENCES: A Quantum Comprehensive High-Tech Industry***
 **CHATGPT**
 **Amedeo Pelliccia**
@@ -19887,4 +19889,4 @@ Al ejecutar este código, obtendrás el bloque génesis y el bloque 1 con todos 
     "timestamp": "2024-0803T00:00:00.000Z", 
     "data": {  
         "project": "ATA 00",          "description": "Initial setup and task definition for ATA 00 project.", 	 
-        "tasks": [        "Documentation standards development",  Vamos a detallar la creación de un bloque génesi
+        "tasks": [        "Documentation standards development",  Vamos a detallar la cre
