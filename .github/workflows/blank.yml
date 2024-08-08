@@ -1,4 +1,63 @@
-# This is a basic workflow to help you get started with Actions
+The provided information maps bits to specific ATA (Air Transport Association) chapters and corresponding chapter maintenance codes (CMCs). Here's a detailed explanation of the ATA chapters listed with their CMCs, including reserved ones for new technologies:
+
+### ATA Chapters and CMCs (Chapter Maintenance Codes)
+
+#### 3 Bits:
+- **000:** No direct association
+- **001:** Chapter 1 - Introduction (CMC: INTR001)
+- **010:** Chapter 2 - Table of Contents (CMC: TOC002)
+- **011:** Chapter 3 - General (CMC: GEN003)
+- **100:** Chapter 4 - Airplane Tail Numbers (CMC: TAIL004)
+- **101:** Chapter 5 - Time Limits/Maintenance Checks (CMC: TLMC005)
+- **110:** Chapter 6 - Dimensions and Areas (CMC: DMA006)
+- **111:** Chapter 7 - Lifting and Shoring (CMC: LS007)
+
+#### 4 Bits:
+- **0000:** No direct association
+- **0001:** Chapter 8 - Leveling and Weighing (CMC: LW008)
+- **0010:** Chapter 9 - Towing and Taxiing (CMC: TT009)
+- **0011:** Chapter 10 - Parking, Mooring, Storage, and Return to Service (CMC: PMSR010)
+- **0100:** Chapter 11 - Placards and Markings (CMC: PM011)
+- **0101:** Chapter 12 - Servicing - Routine Maintenance (CMC: SRM012)
+- **0110 to 1100:** Reserved (New Technologies) (CMCs: NT013 to NT019)
+- **1101:** Chapter 20 - Standard Practices - Airframe (CMC: SPA020)
+- **1110:** Chapter 21 - Air Conditioning and Pressurization (CMC: ACP021)
+- **1111:** Chapter 22 - Auto Flight (CMC: AF022)
+
+#### 5 Bits:
+- **00000:** No direct association
+- **00001:** Chapter 23 - Communications (CMC: COM023)
+- **00010:** Chapter 24 - Electrical Power (CMC: EP024)
+- **00011:** Chapter 25 - Equipment/Furnishings (CMC: EF025)
+- **00100:** Chapter 26 - Fire Protection (CMC: FP026)
+- **00101:** Chapter 27 - Flight Controls (CMC: FC027)
+- **00110:** Chapter 28 - Fuel (CMC: FUEL028)
+- **00111:** Chapter 29 - Hydraulic Power (CMC: HP029)
+- **01000:** Chapter 30 - Ice and Rain Protection (CMC: IRP030)
+- **01001:** Chapter 31 - Indicating/Recording Systems (CMC: IRS031)
+- **01010:** Chapter 32 - Landing Gear (CMC: LG032)
+- **01011:** Chapter 33 - Lights (CMC: LIGHT033)
+- **01100:** Chapter 34 - Navigation (CMC: NAV034)
+- **01101:** Chapter 35 - Oxygen (CMC: OXY035)
+- **01110:** Chapter 36 - Pneumatic (CMC: PNE036)
+- **01111:** Chapter 37 - Vacuum (CMC: VAC037)
+- **10000:** Chapter 38 - Water/Waste (CMC: WW038)
+- **10001:** Chapter 39 - Electrical - Electronic Panels and Multiplex Data Buses (CMC: EEPMB039)
+- **10010:** Chapter 40 - Multiplies (CMC: MULT040)
+- **10011:** Chapter 41 - Water Ballast (CMC: WB041)
+- **10100:** Chapter 42 - Integrated Modular Avionics (CMC: IMA042)
+- **10101:** Chapter 43 - Digital Techniques (CMC: DT043)
+- **10110:** Chapter 44 - Cabin Systems (CMC: CS044)
+- **10111:** Chapter 45 - Central Maintenance System (CMC: CMS045)
+- **11000:** Chapter 46 - Information Systems (CMC: IS046)
+- **11001 to 11010:** Reserved (New Technologies) (CMCs: NT047 to NT048)
+- **11011:** Chapter 49 - Auxiliary Power Unit (APU) (CMC: APU049)
+- **11100:** Chapter 50 - Cargo and Accessory Compartments (CMC: CAC050)
+- **11101:** Chapter 51 - Structures - General (CMC: SG051)
+- **11110:** Chapter 52 - Doors (CMC: DOORS052)
+- **11111:** Chapter 53 - Fuselage (CMC: FUSE053)
+
+This detailed mapping helps in understanding the categorization and identification of maintenance documentation within the aerospace industry, adhering to the ATA standard.# This is a basic workflow to help you get started with Actions
 
 name: CI
 
