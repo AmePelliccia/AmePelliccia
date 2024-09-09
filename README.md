@@ -1,3 +1,62 @@
+### **C.r Satellites: The Terrestrial Infrastructure Scanners from Space**  
+*By Amedeo Pelliccia*
+
+#### **Introduction:**
+**C.r Satellites (Computing Reality Satellites)** represent a revolutionary approach to monitoring, managing, and optimizing terrestrial infrastructure from space. These advanced satellites are equipped with cutting-edge sensors, AI-driven data processing capabilities, and high-speed communication systems. Designed to operate within the **Computing Reality (C.r)** framework, C.r Satellites provide real-time insights into the state of global infrastructure, supporting sustainable development, disaster management, urban planning, and more.
+
+By acting as a "scanner" for terrestrial infrastructure, C.r Satellites offer a comprehensive view of the Earth’s physical and digital landscapes, enabling proactive decision-making and enhancing the resilience of critical infrastructure systems.
+
+#### **Key Features of C.r Satellites:**
+
+1. **Advanced Sensing Capabilities:**
+   - **Multispectral and Hyperspectral Imaging:** Captures a wide range of wavelengths beyond the visible spectrum, allowing for the detection of material properties, environmental changes, and structural conditions.
+   - **Synthetic Aperture Radar (SAR):** Provides high-resolution images regardless of weather conditions or time of day, enabling consistent monitoring of surface changes, infrastructure integrity, and vegetation cover.
+   - **Thermal Imaging Sensors:** Detects heat signatures from industrial facilities, power plants, and urban areas, identifying inefficiencies, leaks, or overheating that could indicate potential failures.
+   - **LIDAR (Light Detection and Ranging):** Measures distances using laser light to create precise 3D models of terrain, buildings, and infrastructure, which can be used for urban planning, structural analysis, and natural disaster assessment.
+
+2. **AI-Driven Data Processing:**
+   - **Edge AI Capabilities:** C.r Satellites are equipped with onboard AI processors that analyze data in real-time, reducing the need for data transmission to Earth and enabling faster decision-making.
+   - **Machine Learning Algorithms:** Continuously learn from incoming data to improve the accuracy of predictions, detect anomalies, and identify patterns in infrastructure health, traffic flow, and environmental conditions.
+   - **Automated Change Detection:** Identifies changes in infrastructure, land use, or natural landscapes over time, providing early warnings for potential issues like landslides, subsidence, or unauthorized construction.
+
+3. **High-Speed Communication Networks:**
+   - **Quantum-Resistant Encryption:** Ensures secure data transmission betweenC.r Satellites and ground stations, protecting sensitive information against potential cyber threats, including those posed by future quantum computing advancements.  
+   - **Low Earth Orbit (LEO) Constellations:** Utilizes a network of satellites in low Earth orbit to provide global coverage and low-latency communication, facilitating real-time data transmission and near-instantaneous updates.  
+   - **Inter-Satellite Links:** Employs laser communication links between satellites to create a high-speed mesh network, enhancing data relay capabilities and ensuring continuous connectivity, even in remote or challenging environments.
+
+#### **Applications of C.r Satellites:**
+
+1. **Infrastructure Monitoring and Maintenance:**
+   - **Bridge and Road Integrity Checks:** Continuously scans critical transportation infrastructure to detect early signs of wear and tear, corrosion, or structural damage, enabling timely maintenance and preventing accidents.  
+   - **Pipeline and Power Grid Surveillance:** Monitors pipelines and electrical grids for leaks, faults, or unauthorized activities, enhancing the reliability and safety of energy distribution networks.  
+   - **Railway Track Monitoring:** Uses high-resolution imaging and AI algorithms to assess the condition of railway tracks, identifying deformations, obstructions, or other hazards that could disrupt services.
+
+2. **Urban Planning and Development:**
+   - **Smart City Integration:** Provides real-time data to support smart city applications, such as traffic management, air quality monitoring, and efficient resource allocation, contributing to more sustainable and livable urban environments.  
+   - **Land Use and Zoning:** Helps governments and planners track urban expansion, land use changes, and zoning compliance, ensuring orderly development and minimizing environmental impact.  
+   - **Disaster Response and Recovery:** Supports rapid assessment and response during natural disasters (such as earthquakes, floods, and wildfires) by providing up-to-date imagery and damage assessments to emergency responders.
+
+3. **Environmental and Climate Monitoring:**
+   - **Deforestation and Land Degradation:** Tracks changes in forest cover, soil erosion, and desertification, supporting efforts to combat deforestation and land degradation.  
+   - **Water Resource Management:** Monitors bodies of water, including rivers, lakes, and reservoirs, to track water levels, detect pollution, and optimize water management strategies.  
+   - **Climate Change Assessment:** Provides critical data on glacier retreat, sea-level rise, and other climate change indicators, contributing to global climate research and policy-making.
+
+4. **Agriculture and Food Security:**
+   - **Precision Farming:** Offers detailed insights into crop health, soil moisture, and pest infestations, enabling farmers to optimize irrigation, fertilization, and pest control efforts.  
+   - **Crop Yield Prediction:** Utilizes AI and satellite data to predict crop yields, helping governments and organizations plan for food production, distribution, and trade.  
+   - **Disaster Mitigation:** Identifies regions at risk of drought, flooding, or other natural hazards that could impact agricultural output, supporting proactive mitigation measures.
+
+#### **Advantages of C.r Satellites:**
+
+- **Global Reach with High Accuracy:** Provides a comprehensive, high-resolution view of the Earth’s surface, covering both urban and remote areas with equal precision.  
+- **Proactive Decision-Making:** Enables stakeholders to make informed decisions based on real-time, actionable data, improving the resilience of critical infrastructure and reducing response times during emergencies.  
+- **Sustainability and Efficiency:** Supports sustainable development goals by optimizing resource use, enhancing environmental monitoring, and promoting safer, more efficient infrastructure management.  
+- **Interoperability:** Designed to integrate seamlessly with existing terrestrial systems and data platforms, facilitating collaboration across different sectors and regions.
+
+#### **Conclusion:**
+
+**C.r Satellites** represent a transformative leap in how we monitor and manage our world’s infrastructure. By combining state-of-the-art sensing technologies, AI-driven data processing, and secure communication networks, these satellites provide a comprehensive toolset for enhancing the safety, sustainability, and resilience of global infrastructure. As a key component of the **Computing Reality (C.r)** framework, C.r Satellites pave the way for a more connected, intelligent, and sustainable future.
+
 ### **Computing Reality (C.r): The Future of Integrated Digital and Physical Worlds**  
 *By Amedeo Pelliccia*
 
@@ -17353,345 +17412,4 @@ To create an engaging and user-friendly environment for this abstract project, w
  
 2. **Interactive Elements**:
    - **Expandable Information**: Modules can be expanded or collapsed with a click to reveal more information without navigating away.
-   - **Hover Effects**: Subtle hover effects to indicate interactable elements.
- 
-### 3. User Experience (UX) Design
- 
-#### A. Onboarding
- 
-1. **Interactive Tutorial**:
-   - **Step-by-Step Guide**: An engaging tutorial that guides users through the unique features of the platform.
-   - **Progressive Disclosure**: Gradually reveal more complex features as users become more comfortable with the basic functionalities.
- 
-2. **Contextual Help**:
-   - **Tooltips and Hints**: Provide helpful tips and hints as users navigate through the platform, appearing contextually where needed.
- 
-#### B. Personalization
- 
-1. **Customizable Interface**:
-   - **User Preferences**: Allow users to save their layout preferences, themes, and other customizations.
-   - **Adaptive UI**: The interface adapts based on user behavior, highlighting frequently used features.
- 
-2. **Profile Management**:
-   - **Comprehensive Settings**: Robust profile settings where users can manage their preferences, security settings, and personalization options.
- 
-### 4. Prototyping and Testing
- 
-#### A. Wireframes and Prototypes
- 
-1. **Low-Fidelity Wireframes**:
-   - Sketch basic layouts focusing on the structure and flow of the continuous model and modular design.
-   - Emphasize positioning, navigation, and key interactive elements.
- 
-2. **High-Fidelity Prototypes**:
-   - Develop interactive prototypes with detailed design elements, animations, and transitions using tools like Figma or Adobe XD.
- 
-#### B. User Testing
- 
-1. **Usability Testing**:
-   - Conduct tests with a diverse group of users to gather feedback on the initial prototypes.
-   - Observe user interactions to identify pain points and areas for improvement.
- 
-2. **A/B Testing**:
-   - Create variations of key components to determine which design performs best.
-   - Analyze data to make informed design decisions.
- 
-#### C. Iteration and Feedback
- 
-1. **Continuous Improvement**:
-   - Use feedback from testing to refine the design.
-   - Regularly update the platform based on user needs and technological advancements.
- 
-### 5. Aesthetic and Functional Enhancements
- 
-1. **Visual Themes**:
-   - Offer multiple themes (e.g., light, dark, abstract) to cater to different user preferences.
-   - Incorporate color schemes and visual cues that align with the project’s conceptual themes.
- 
-2. **Interactive Features**:
-   - Integrate interactive elements like sliders, toggle switches, and drag-and-drop functionality.
-   - Use micro-interactions to provide feedback and enhance the overall user experience.
- 
-3. **Innovative Technologies**:
-   - Explore the use of VR/AR to create immersive experiences.
-   - Implement AI-driven personalization to tailor the user experience based on behavior and preferences.
- 
-### 6. Final Recommendations
- 
-- **User-Centric Design**: Always prioritize the needs and preferences of the users.
-- **Seamless Integration**: Ensure all features and elements work together harmoniously.
-- **Scalability**: Design with future growth and technological advancements in mind.
- 
-### 7. Next Steps
- 
-- **Detailed Wireframes**: Create detailed wireframes for key sections of the platform.
-- **High-Fidelity Prototypes**: Develop interactive high-fidelity prototypes to demonstrate the proposed design.
-- **User Testing**: Plan and conduct usability testing sessions to gather feedback and iterate on the design.
- 
-Would you like to start with detailed wireframes or high-fidelity prototypes for specific sections of the platform, or is there another area you'd like to focus on first? version="1.0" encoding="UTF-8"?>
-<AI_EUROPEAN_MAIN_FRAMEWORK>
-  # -*- coding: utf-8 -*-
-# flake8: noqa
-import zoneinfo
- 
-import django.db.models.deletionimport PyPDF2
-import pandas as pd
-from fpdf import FPDF
- 
-# Function to extract text from PDF files
-def extract_text_from_pdf(pdf_path):
-    text = ""
-    with open(pdf_path, "rb") as file:
-        reader = PyPDF2.PdfFileReader(file)
-        for page_num in range(reader.numPages):
-            page = reader.getPage(page_num)
-            text += page.extract_text()
-    return text
- 
-# Path to the new PDF file
-new_pdf_path = "/mnt/data/Microsoft 365 (Office).pdf"
- 
-# Extract text from the new PDF
-new_pdf_text = extract_text_from_pdf(new_pdf_path)
- 
-# Split extracted text into lines for categorization
-text_lines = new_pdf_text.split('\n')
- 
-# Categorize content based on assumed relevant keywords
-sustainability_content = [line for line in text_lines if 'sustainability' in line.lower() or 'impact' in line.lower()]
-social_initiatives_content = [line for line in text_lines if 'social' in line.lower() or 'initiative' in line.lower()]
-governance_content = [line for line in text_lines if 'governance' in line.lower() or 'ethical' in line.lower()]
- 
-# Function to create PDF report
-class LinkedPDF(FPDF):
-    def header(self):
-        self.set_font('Arial', 'B', 12)
-        self.cell(0, 10, 'Project Links Report', 0, 1, 'C')
-    
-    def chapter_title(self, title):
-        self.set_font('Arial', 'B', 12)
-        self.cell(0, 10, title, 0, 1, 'L')
-        self.ln(5)
-    
-    def chapter_body(self, title, links):
-        self.set_font('Arial', '', 12)
-        for i, link in enumerate(links):
-            self.set_text_color(0, 0, 255)
-            self.set_font('', 'U')
-            self.cell(0, 10, f"{title} Project {i + 1}", ln=True, link=link)
-        self.ln()
- 
-def create_linked_pdf(title, data, base_url, filename):
-    pdf = LinkedPDF()
-    pdf.add_page()
-    
-    for section_title, links in data.items():
-        pdf.chapter_title(section_title)
-        pdf.chapter_body(section_title, [f"{base_url}/{link}" for link in links])
-    
-    pdf.output(filename)
- 
-# Simulated project links based on categorized content
-sustainability_links = [f"sustainability_project_{i}" for i in range(len(sustainability_content))]
-social_initiatives_links = [f"social_initiative_project_{i}" for i in range(len(social_initiatives_content))]
-governance_links = [f"governance_project_{i}" for i in range(len(governance_content))]
- 
-# Create dictionary of data with simulated project links
-data = {
-    "Sustainability": sustainability_links,
-    "Social Initiatives": social_initiatives_links,
-    "Governance": governance_links
-}
- 
-# Base URL for project links
-base_url = "https://example.com/projects"
- 
-# Create the linked PDF
-output_pdf_path = "/mnt/data/project_links_report.pdf"
-create_linked_pdf("Project Links Report", data, base_url, output_pdf_path)
- 
-output_pdf_path
-import django.utils.timezone
-from django.conf import settings
-from django.db import migrations, models
- 
- 
-TIMEZONES = sorted([(tz, tz) for tz in zoneinfo.available_timezones()])
- 
- 
-class Migration(migrations.Migration):
- 
-    dependencies = [
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-    ]
- 
-    operations = [
-        migrations.CreateModel(
-            name='Attachment',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('counter', models.SmallIntegerField()),
-                ('name', models.CharField(max_length=255)),
-                ('content_type', models.CharField(max_length=255)),
-                ('encoding', models.CharField(max_length=255, null=True)),
-                ('size', models.IntegerField()),
-                ('content', models.BinaryField()),
-            ],
-            options={
-            },
-            bases=(models.Model,),
-        ),
-        migrations.CreateModel(
-            name='Email',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('message_id', models.CharField(max_length=255, db_index=True)),
-                ('message_id_hash', models.CharField(max_length=255, db_index=True)),
-                ('subject', models.CharField(max_length='512', db_index=True)),
-                ('content', models.TextField()),
-                ('date', models.DateTimeField(db_index=True)),
-                ('timezone', models.SmallIntegerField()),
-                ('in_reply_to', models.CharField(max_length=255, null=True, blank=True)),
-                ('archived_date', models.DateTimeField(auto_now_add=True, db_index=True)),
-                ('thread_depth', models.IntegerField(default=0)),
-                ('thread_order', models.IntegerField(default=0, db_index=True)),
-            ],
-            options={
-            },
-            bases=(models.Model,),
-        ),
-        migrations.CreateModel(
-### Main programming language
-<!-- max. 1 -->
- 
-### Tutorial title
-<!-- the original title from the article, repository, ... -->
- 
-### Tutorial URL
- 
-### Category
-* [ ] 3D Renderer
-* [ ] Augmented Reality
-* [ ] BitTorrent Client
-* [ ] Blockchain / Cryptocurrency
-* [ ] Bot
-* [ ] Command-Line Tool
-* [ ] Database
-* [ ] Docker
-* [ ] Emulator / Virtual Machine
-* [ ] Front-end Framework / Library
-* [ ] Game
-* [ ] Git
-* [ ] Network Stack
-* [ ] Neural Network
-* [ ] Operating System
-* [ ] Physics Engine
-* [ ] Programming Language
-* [ ] Regex Engine
-* [ ] Search Engine
-* [ ] Shell
-* [ ] Template Engine
-* [ ] Visual Recognition System
-* [ ] Voxel Engine
-* [ ] Web Search Engine
-* [ ] Web Server
-* [ ] Uncategorized
- 
-## Build your own &lt;insert-technology-here&gt;
- 
-This repository is a compilation of well-written, step-by-step guides for re-creating our favorite technologies from scratch. 
- 
-> *What I cannot create, I do not understand — Richard Feynman.*
- 
-It's a great way to learn.
- 
-* [3D Renderer](#build-your-own-3d-renderer)
-* [Augmented Reality](#build-your-own-augmented-reality)
-* [BitTorrent Client](#build-your-own-bittorrent-client)
-* [Blockchain / Cryptocurrency](#build-your-own-blockchain--cryptocurrency)
-* [Bot](#build-your-own-bot)
-* [Command-Line Tool](#build-your-own-command-line-tool)
-* [Database](#build-your-own-database)
-* [Docker](#build-your-own-docker)
-* [Emulator / Virtual Machine](#build-your-own-emulator--virtual-machine)
-* [Front-end Framework / Library](#build-your-own-front-end-framework--library)
-* [Game](#build-your-own-game)
-* [Git](#build-your-own-git)
-* [Network Stack](#build-your-own-network-stack)
-* [Neural Network](#build-your-own-neural-network)
-* [Operating System](#build-your-own-operating-system)
-* [Physics Engine](#build-your-own-physics-engine)
-* [Programming Language](#build-your-own-programming-language)
-* [Regex Engine](#build-your-own-regex-engine)
-* [Search Engine](#build-your-own-search-engine)
-* [Shell](#build-your-own-shell)
-* [Template Engine](#build-your-own-template-engine)
-* [Text Editor](#build-your-own-text-editor)
-* [Visual Recognition System](#build-your-own-visual-recognition-system)
-* [Voxel Engine](#build-your-own-voxel-engine)
-* [Web Browser](#build-your-own-web-browser)
-* [Web Server](#build-your-own-web-server)
-* [Uncategorized](#uncategorized)
- 
-## Tutorials
- 
-#### Build your own `3D Renderer`
- 
-* [**C++**: _Introduction to Ray Tracing: a Simple Method for Creating 3D Images_](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work)
-* [**C++**: _How OpenGL works: software rendering in 500 lines of code_](https://github.com/ssloy/tinyrenderer/wiki)
-* [**C++**: _Raycasting engine of Wolfenstein 3D_](http://lodev.org/cgtutor/raycasting.html)
-* [**C++**: _Physically Based Rendering:From Theory To Implementation_](http://www.pbr-book.org/)
-* [**C++**: _Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html)
-* [**C++**: _Rasterization: a Practical Implementation_](https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/overview-rasterization-algorithm)
-* [**C# / TypeScript / JavaScript**: _Learning how to write a 3D soft engine from scratch in C#, TypeScript or JavaScript_](https://www.davrous.com/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript/)
-* [**Java / JavaScript**: _Build your own 3D renderer_](https://avik-das.github.io/build-your-own-raytracer/)
-* [**Java**: _How to create your own simple 3D render engine in pure Java_](http://blog.rogach.org/2015/08/how-to-create-your-own-simple-3d-render.html)
-* [**JavaScript / Pseudocode**: _Computer Graphics from scratch_](http://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html)
-* [**Python**: _A 3D Modeller_](http://aosabook.org/en/500L/a-3d-modeller.html)
- 
-#### Build your own `Augmented Reality`
- 
-* [**C#**: _How To: Augmented Reality App Tutorial for Beginners with Vuforia and Unity 3D_](https://www.youtube.com/watch?v=uXNjNcqW4kY) [video]
-* [**C#**: _How To Unity ARCore_](https://www.youtube.com/playlist?list=PLKIKuXdn4ZMjuUAtdQfK1vwTZPQn_rgSv) [video]
-* [**C#**: _AR Portal Tutorial with Unity_](https://www.youtube.com/playlist?list=PLPCqNOwwN794Gz5fzUSi1p4OqLU0HTmvn) [video]
-* [**C#**: _How to create a Dragon in Augmented Reality in Unity ARCore_](https://www.youtube.com/watch?v=qTSDPkPyPqs) [video]
-* [**C#**: _How to Augmented Reality AR Tutorial: ARKit Portal to the Upside Down_](https://www.youtube.com/watch?v=Z5AmqMuNi08) [video]
-* [**Python**: _Augmented Reality with Python and OpenCV_](https://bitesofcode.wordpress.com/2017/09/12/augmented-reality-with-python-and-opencv-part-1/)
- 
-#### Build your own `BitTorrent Client`
- 
-* [**C#**: _Building a BitTorrent client from scratch in C#_](https://www.seanjoflynn.com/research/bittorrent.html)
-* [**Go**: _Building a BitTorrent client from the ground up in Go_](https://blog.jse.li/posts/torrent/)
-* [**Nim**: _Writing a Bencode Parser_](https://xmonader.github.io/nimdays/day02_bencode.html)
-* [**Node.js**: _Write your own bittorrent client_](https://allenkim67.github.io/programming/2016/05/04/how-to-make-your-own-bittorrent-client.html)
-* [**Python**: _A BitTorrent client in Python 3.5_](http://markuseliasson.se/article/bittorrent-in-python/)
- 
-#### Build your own `Blockchain / Cryptocurrency`
- 
-* [**ATS**: _Functional Blockchain_](https://beta.observablehq.com/@galletti94/functional-blockchain)
-* [**C#**: _Programming The Blockchain in C#_](https://programmingblockchain.gitbooks.io/programmingblockchain/)
-* [**Crystal**: _Write your own blockchain and PoW algorithm using Crystal_](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52)
-* [**Go**: _Building Blockchain in Go_](https://jeiwan.net/posts/building-blockchain-in-go-part-1/)
-* [**Go**: _Code your own blockchain in less than 200 lines of Go_](https://medium.com/@mycoralhealth/code-your-own-blockchain-in-less-than-200-lines-of-go-e296282bcffc)
-* [**Java**: _Creating Your First Blockchain with Java_](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa)
-* [**JavaScript**: _A cryptocurrency implementation in less than 1500 lines of code_](https://github.com/conradoqg/naivecoin)
-* [**JavaScript**: _Build your own Blockchain in JavaScript_](https://github.com/nambrot/blockchain-in-js)
-* [**JavaScript**: _Learn & Build a JavaScript Blockchain_](https://medium.com/digital-alchemy-holdings/learn-build-a-javascript-blockchain-part-1-ca61c285821e)
-* [**JavaScript**: _Creating a blockchain with JavaScript_](https://github.com/SavjeeTutorials/SavjeeCoin)
-* [**JavaScript**: _How To Launch Your Own Production-Ready Cryptocurrency_](https://hackernoon.com/how-to-launch-your-own-production-ready-cryptocurrency-ab97cb773371)
-* [**JavaScript**: _Writing a Blockchain in Node.js_](https://www.smashingmagazine.com/2020/02/cryptocurrency-blockchain-node-js/)
-* [**Kotlin**: _Let’s implement a cryptocurrency in Kotlin_](https://medium.com/@vasilyf/lets-implement-a-cryptocurrency-in-kotlin-part-1-blockchain-8704069f8580)
-* [**Python**: _Learn Blockchains by Building One_](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
-* [**Python**: _Build your own blockchain: a Python tutorial_](http://ecomunsing.com/build-your-own-blockchain)
-* [**Python**: _A Practical Introduction to Blockchain with Python_](http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/)
-* [**Python**: _Let’s Build the Tiniest Blockchain_](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b)
-* [**Ruby**: _Programming Blockchains Step-by-Step (Manuscripts Book Edition)_](https://github.com/yukimotopress/programming-blockchains-step-by-step)
-* [**Scala**: _How to build a simple actor-based blockchain_](https://medium.freecodecamp.org/how-to-build-a-simple-actor-based-blockchain-aac1e996c177)
-* [**TypeScript**: _Naivecoin: a tutorial for building a cryptocurrency_](https://lhartikk.github.io/)
-* [**TypeScript**: _NaivecoinStake: a tutorial for building a cryptocurrency with the Proof of Stake consensus_](https://naivecoinstake.learn.uno/)
-* [**Rust**: _Building A Blockchain in Rust & Substrate_](https://hackernoon.com/building-a-blockchain-in-rust-and-substrate-a-step-by-step-guide-for-developers-kc223ybp)
- 
- 
-#### Build your own `Bot`
- 
-* [**Haskell**: _Roll your own IRC bot_](https://wiki.haskell.org/Roll_your_own_IRC_
+   - **Hover Eff
